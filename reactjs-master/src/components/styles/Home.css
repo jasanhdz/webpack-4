@@ -1,0 +1,49 @@
+.Home__container {
+  background: url("../../images/stars.svg"), #1b1b25;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Home__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Title {
+  color: white;
+  text-align: center;
+}
+
+.Description {
+  text-align: center;
+  color: #c9c9c9;
+}
+
+@media screen and (max-width: 1050px) {
+  .Home__hero-img {
+    width: 53%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Home__container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .Home__description {
+    margin-bottom: 20px;
+  }
+  .Home__hero-img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .Home__description > p {
+    font-size: 0.8em;
+  }
+}
