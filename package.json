@@ -16,6 +16,8 @@
     "url-loader": "webpack-dev-server --config ./url-loader/webpack.dev.config.js",
     "prepo": "webpack-dev-server --config ./prepo/webpack.dev.config.js",
     "prevent-duplication": "webpack --config ./prevent-duplication/webpack.dev.config.js",
+    "dll": "webpack --config ./dll/webpack.dll.config.js",
+    "dll-fast": "webpack --config ./dll/webpack.dev.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
