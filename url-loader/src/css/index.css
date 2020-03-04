@@ -1,0 +1,14 @@
+body {
+  background-color: lightskyblue;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 40px;
+  font-family: system-ui;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  /* animation: 300ms latido infinite; */
+}
