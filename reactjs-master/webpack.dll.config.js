@@ -1,5 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
+const TerserJSPlugin = require("terser-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -19,5 +21,8 @@ module.exports = {
   ],
   resolve: {
     extensions: [".js", ".jsx"]
+  },
+  optimization: {
+    minimizer: [new TerserJSPlugin(), new OptimizeCSSAssetsPlugin()]
   }
 };
