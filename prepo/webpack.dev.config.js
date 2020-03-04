@@ -23,7 +23,13 @@ module.exports = {
         test: /\.css$/,
         use: [
           "style-loader", // luego quiero que los inyectes a mi html
-          "css-loader" // quiero que primero interpretes que pasa con los imports
+          {
+            loader: "css-loader", // quiero que primero interpretes que pasa con los imports
+            options: {
+              importLoaders: 1
+            }
+          },
+          "postcss-loader"
         ]
       },
       {

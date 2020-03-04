@@ -12,3 +12,5 @@ body {
   text-shadow: 1px 1px 1px black;
   /* animation: 300ms latido infinite; */
 }
+
+@import "./postcss.css";

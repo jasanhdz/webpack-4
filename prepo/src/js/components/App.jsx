@@ -18,6 +18,7 @@ const App = () => {
       <p className="sass">Estos es Sass</p>
       <p className="less">Esto es less</p>
       <p className="stylus">Esto es Stylus</p>
+      <p className="post-css">Esto es postcss</p>
       <video src={video} width={360} alt="video" controls poster={logo} />
       Que linda aplicación hecha en React {"<3"}
       <img width={40} src={logo} alt="logo" />
